@@ -114,8 +114,10 @@ POST /api/GetEmpStatus/
 |-------|------|-------------|
 | id | AutoField | Primary key |
 | national_number | CharField | Unique national ID |
-| full_name | CharField | Employee full name |
+| username | CharField | Employee username |
 | is_active | BooleanField | Whether user is active |
+|email| EmailField | Employee email |
+| Phone | CharField | Employee phone |
 
 ### Salary
 
@@ -125,8 +127,7 @@ POST /api/GetEmpStatus/
 | month | IntegerField | Month of salary |
 | year | IntegerField | Year of salary |
 | amount | DecimalField | Monthly salary amount |
-| bonus | DecimalField | Optional bonus |
-| deduction | DecimalField | Optional deduction |
+
 
 ## 📘 API Documentation
 
