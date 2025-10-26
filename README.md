@@ -79,21 +79,21 @@ POST /api/GetEmpStatus/
 ### Request Body
 ```json
 {
-  "NationalNumber": "1234567890"
+    "NationalNumber": "NAT1001"
 }
 ```
 
 ### Example Response
 ```json
 {
-  "user": {
-    "national_number": "1234567890",
-    "full_name": "John Doe",
-    "is_active": true
-  },
-  "average_salary": 6500.0,
-  "status": "Good Standing",
-  "status_color": "green"
+    "EmployeeName": "jdoe",
+    "NationalNumber": "NAT1001",
+    "HighestSalary": "1520.00",
+    "AvarageSalary": "1384.00",
+    "SumOfSalaries": "6920.00",
+    "Status": "RED",
+    "IsActive": true,
+    "LastUpdated": "2025-10-26T08:28:01.758619Z"
 }
 ```
 
